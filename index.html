@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app='customersApp'>
+    <head>
+        <title>AngularJS Jumpstart</title>
+        <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+        
+        <style>
+            .green {color: green;}
+            .red {color: red;}
+            .yellow {color: yellow;}
+            .navy {color: navy;}
+            
+            th {background-color: aqua;}
+        </style>
+    </head>
+    <body ng-controller='CustomersController'>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="#/customers">Customers</a> </li>
+                    <li> <a href="#/allOrders">Orders</a> </li>
+                </ul>
+            </nav>        
+        </header>
+       
+       <div ng-view></div>
+        
+        <script src="script/angular.js"></script>
+        <script src="script/angular-route.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/customersController.js"></script>
+        <script src="app/controllers/ordersController.js"></script>
+        <script src="app/controllers/allOrdersController.js"></script>
+        <script src="app/services/customersFactory.js"></script>
+    </body>
+</html>
